@@ -26,5 +26,16 @@ export interface IconProps extends Omit<ImageProps, "src" | "source"> {
 export const Icon = ({ icon = "Unknown", ...rest }: IconProps) => {
   const iconSrc = IconMap[icon]
 
-  return <Image src={iconSrc} {...rest} />
+  return (
+    <Image
+      src={async () => {
+        const file = Bun.file(iconSrc)
+        const arrayBuffer = await file.arrayBuffer()
+        const data = Buffer.from(arrayBuffer)
+
+        return { data: data, format: "png" }
+      }}
+      {...rest}
+    />
+  )
 }
