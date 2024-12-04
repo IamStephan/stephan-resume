@@ -30,9 +30,9 @@ export const Overview = () => {
 
       <View style={cn("text-neutral-600")}>
         <Text style={cn("mb-2")}>
-          I am an experienced front-end developer who plans, builds, and deploys
-          production-ready websites and applications using modern best practices
-          and scalable architectures.
+          Experienced front-end developer specializing in crafting scalable,
+          high-performance web solutions that drive user engagement and business
+          growth.
         </Text>
 
         <View style={cn("flex-row")}>

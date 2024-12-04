@@ -2,16 +2,16 @@ import { Section, ListBlock, ListItem } from "@/components"
 
 export const Projects = () => {
   return (
-    <Section title="Projects">
+    <Section title="Projects" break>
       <ListBlock
         title="InHealth Suite"
         subTitle="Several web applications"
         date="Apr 2024 - Present"
       >
         <ListItem>
-          Developed and maintained a suite of applications for both internal and
-          external use, handling all front-end development and deployment
-          independently.
+          Developed and maintained a suite of applications for internal and
+          external use, independently managing all front-end development and
+          deployment.
         </ListItem>
 
         <ListItem>
@@ -20,9 +20,9 @@ export const Projects = () => {
         </ListItem>
 
         <ListItem>
-          Built the entire suite using React, TypeScript, and TailwindCSS,
-          ensuring consistent performance and user experience across all
-          applications.
+          Standardized design and development workflows using React, TypeScript,
+          and TailwindCSS, ensuring consistent performance and a seamless user
+          experience across the suite.
         </ListItem>
       </ListBlock>
 
@@ -32,25 +32,31 @@ export const Projects = () => {
         date="Jul 2024 - Sep 2024"
       >
         <ListItem>
-          A progressive web app (PWA) designed for employers to assess employee
-          wellness through health sessions.
+          Developed a progressive web app (PWA) enabling employers to assess
+          employee wellness through interactive health sessions.
         </ListItem>
 
         <ListItem>
-          Integrated an external SDK to implement facial scanning features,
-          enabling real-time readings of biomarkers such as blood pressure,
-          heart rate, and hemoglobin using AI and remote photoplethysmography
-          (r-PPG).
+          Integrated an external SDK to implement advanced facial scanning
+          features, enabling real-time biomarker readings such as blood
+          pressure, heart rate, and hemoglobin via AI and remote
+          photoplethysmography (r-PPG).
         </ListItem>
 
         <ListItem>
-          Designed and built the app using React, TypeScript, and TailwindCSS,
-          ensuring a responsive and intuitive user interface.
+          Conducted research on the inner workings of facial scanning technology
+          and real-time biomarker detection, presenting findings to executives
+          to guide decision-making.
         </ListItem>
 
         <ListItem>
-          Enabled the app to be installed locally on devices as a PWA, providing
-          users with a seamless experience.
+          Added functionality to allow third parties to seamlessly integrate
+          into the system using iframes.
+        </ListItem>
+
+        <ListItem>
+          Enabled local installation of the app as a PWA to provide a seamless,
+          device-native experience.
         </ListItem>
       </ListBlock>
 
@@ -60,21 +66,22 @@ export const Projects = () => {
         date="Jun 2021 - Oct 2021"
       >
         <ListItem>
-          Implemented Cypress test runners using Github Actions.
+          Implemented automated test runners using Cypress and integrated them
+          with GitHub Actions for continuous testing.
         </ListItem>
 
         <ListItem>
-          Used Firebase for storing test recordings, triggering test runners,
-          collecting results and authentication.
+          Leveraged Firebase for managing test recordings, triggering test
+          executions, storing results, and authentication.
         </ListItem>
 
         <ListItem>
-          Developed an admin dashboard to view test results using NextJS and
-          TailwindCSS.
+          Developed an admin dashboard with Next.js and TailwindCSS, providing a
+          centralized platform for viewing and managing test results.
         </ListItem>
       </ListBlock>
 
-      <ListBlock
+      {/* <ListBlock
         title="Gerimed Mobility"
         subTitle="E-commerce storefront"
         date="Jun 2020 - Nov 2020"
@@ -92,7 +99,7 @@ export const Projects = () => {
         <ListItem>
           Used GraphQL API to declaratively fetch and submit data to Strapi.
         </ListItem>
-      </ListBlock>
+      </ListBlock> */}
     </Section>
   )
 }
