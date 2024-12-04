@@ -18,8 +18,8 @@ export const PersonalDetails: PersonalDetail[] = [
     url: "tel:(+27) 62 909 8820",
   },
   {
-    icon: "WorldWeb",
-    label: "https://iamstephan.dev",
-    url: "https://iamstephan.dev",
+    icon: "LinkedIn",
+    label: "LinkedIn: stephan-burger",
+    url: "https://www.linkedin.com/in/stephan-burger/",
   },
 ]
