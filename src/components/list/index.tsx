@@ -14,7 +14,7 @@ export const ListItem = ({ style, children, ...rest }: ListItemProps) => {
       {...rest}
     >
       <Text style={cn("mx-2")}>{"\u2022"}</Text>
-      <Text style={cn("flex-1")}>{children}</Text>
+      <Text style={cn("flex-1 leading-5")}>{children}</Text>
     </View>
   )
 }
