@@ -1,6 +1,6 @@
 {
   "name": "stephan-resume",
-  "module": "index.ts",
+  "module": "index.tsx",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
